@@ -22,6 +22,7 @@ import pjFooter from "./components/footer";
 export default {
   data() {
     return {
+      
     }
   },
   components: {
