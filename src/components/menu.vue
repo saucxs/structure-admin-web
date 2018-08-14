@@ -49,7 +49,7 @@
 
 <style lang="postcss" scoped>
   .menu {
-    width: 220px;
+    width: 180px;
     &::-webkit-scrollbar {
      width: 2px;
    }

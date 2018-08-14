@@ -2,15 +2,10 @@
   <div id="app">
     <pj-header class="header"></pj-header>
     <div class="container">
-      <pj-menu ref="lefeMenu"></pj-menu>
-      <div class="right-bar">
-        <div class="content">
-            <router-view></router-view>
-        </div>
-        <pj-footer></pj-footer>
-      </div>
-      
+      <router-view></router-view>
     </div>
+    <!-- <pj-footer></pj-footer> -->
+    <pj-menu ref="lefeMenu" class="left-menu"></pj-menu>
   </div>
 </template>
 
@@ -45,8 +40,12 @@ body {
 #app {
   height: 100%;
 }
-a{
+a {
   text-decoration: none;
+  color: #000;
+}
+a:focus,a:active{
+  color: #000;
 }
 
 *::-webkit-scrollbar {
@@ -62,30 +61,39 @@ a{
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #777;
+  background-color: #409eff;
 }
 
 *::placeholder {
   font-size: 12px;
 }
 
-.container {
-  display: flex;
-  width: 1366px;
-  height: calc(100% - 46px);
-  margin: auto;
-  & .right-bar{
-    width: 1136px;
-    height: 100%;
-    margin-left: 10px;
-    overflow: auto;
-    & .content{
-      min-height: calc(100% - 150px);
-      padding: 0 40px 35px;
-      background-color: #fff;
-    }
-  }
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 60px;
+}
 
+.container {
+    position: fixed;
+    top: 46px;
+    left: 190px;
+    padding: 10px 20px;
+    background: #fff;
+    height: calc(100% - 20px);
+    width: calc(100% - 230px);
+    overflow: auto;
+}
+
+.left-menu{
+  position: fixed;
+  left: 0;
+  top: 46px;
+  width: 180px;
+  height: 100%;
 }
 
 </style>
