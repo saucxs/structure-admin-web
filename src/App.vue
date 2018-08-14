@@ -35,10 +35,12 @@ export default {
 
 <style lang="postcss">
 body {
+  width: 100%;
   height: 100%;
   background-color: #eee !important;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 #app {
   height: 100%;
@@ -70,17 +72,16 @@ a{
 .container {
   display: flex;
   width: 1366px;
-  height: 100%;
-  // height: calc(100% - 46px);
+  height: calc(100% - 46px);
   margin: auto;
   & .right-bar{
     width: 1136px;
-    height: calc(100% - 120px);
-    margin-left: 230px;
-    position: fixed;
+    height: 100%;
+    margin-left: 10px;
+    overflow: auto;
     & .content{
-      min-height: calc(100% - 20px);
-      padding: 20px 35px;
+      min-height: calc(100% - 150px);
+      padding: 0 40px 35px;
       background-color: #fff;
     }
   }

@@ -50,21 +50,16 @@
 <style lang="postcss" scoped>
   .menu {
     width: 220px;
-    border-right: 1px solid #e6e6e6;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
     &::-webkit-scrollbar {
      width: 2px;
    }
    & > ul{
-     height: 100%;
-     position: absolute;
-     width: 220px;
+      height: 100%;
+      overflow: auto;
    }
    & .el-menu {
-    border: none;
-    color:rgb(255, 255, 255);
+      border: none;
+      color:rgb(255, 255, 255);
    }
    & .v-menu-item-name {
       font-size: 16px;

@@ -1,5 +1,30 @@
 <template>
-    <div>{{text}}</div>
+    <div>
+        <span>{{text}}</span>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+         <p>{{text}}</p>
+        <p>测试测试</p>
+    </div>
 </template>
 
 <script>

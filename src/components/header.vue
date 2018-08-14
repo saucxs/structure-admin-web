@@ -44,12 +44,12 @@
   color: #fff;
   font-size: 16px;
   background: #409EFF;
-  height: 60px;
-  line-height: 60px;
+  height: 46px;
+  line-height: 46px;
   font-weight: 400;
   box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.4);
   & .header-box{
-    width: 1360px;
+    // width: 1360px;
     margin: 0 auto;
   }
   & .header-user-name {
