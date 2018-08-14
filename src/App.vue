@@ -2,7 +2,9 @@
   <div id="app">
     <pj-header class="header"></pj-header>
     <div class="container">
-      <router-view></router-view>
+      <div class="content">
+        <router-view></router-view>
+      </div>
     </div>
     <!-- <pj-footer></pj-footer> -->
     <pj-menu ref="lefeMenu" class="left-menu"></pj-menu>
@@ -86,6 +88,9 @@ a:focus,a:active{
     height: calc(100% - 20px);
     width: calc(100% - 230px);
     overflow: auto;
+    & .content{
+      margin-bottom: 60px;
+    }
 }
 
 .left-menu{
