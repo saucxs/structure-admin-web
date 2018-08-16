@@ -49,20 +49,13 @@
 
 <style lang="postcss" scoped>
   .menu {
+    transition: width 0.28s ease-out;
     width: 180px;
-    &::-webkit-scrollbar {
-     width: 2px;
-   }
-   & > ul{
-      height: 100%;
+    background: #545c64;
+    & .el-menu{
+      width: 100%;
+      border-right: none;
       overflow: auto;
-   }
-   & .el-menu {
-      border: none;
-      color:rgb(255, 255, 255);
-   }
-   & .v-menu-item-name {
-      font-size: 16px;
     }
   }
 </style>

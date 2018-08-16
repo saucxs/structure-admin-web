@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <pj-header class="header"></pj-header>
+    <header-bar></header-bar>
     <div class="container">
-      <div class="content">
-        <router-view></router-view>
+      <menu-bar ref="lefeMenu" class="sidebar-container"></menu-bar>
+      <div class="right-box">
+        <div class="content">
+          <router-view></router-view>
+        </div>
+        <footer-bar></footer-bar>
       </div>
     </div>
-    <!-- <pj-footer></pj-footer> -->
-    <pj-menu ref="lefeMenu" class="left-menu"></pj-menu>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import pjHeader from './components/header'
-import pjMenu from "./components/menu";
-import pjFooter from "./components/footer";
+import headerBar from './components/header'
+import menuBar from "./components/menu";
+import footerBar from "./components/footer";
 export default {
   data() {
     return {
@@ -23,21 +25,24 @@ export default {
     }
   },
   components: {
-    pjHeader,
-    pjMenu,
-    pjFooter
+    headerBar,
+    menuBar,
+    footerBar
   }
 }
 </script>
 
 <style lang="postcss">
+html{
+  height: 100%;
+}
 body {
   width: 100%;
   height: 100%;
   background-color: #eee !important;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 #app {
   height: 100%;
@@ -70,35 +75,31 @@ a:focus,a:active{
   font-size: 12px;
 }
 
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 60px;
+.el-submenu .el-menu-item{
+  min-width: 169px;
 }
 
 .container {
-    position: fixed;
-    top: 46px;
-    left: 190px;
-    padding: 10px 20px;
-    background: #fff;
-    height: calc(100% - 20px);
-    width: calc(100% - 230px);
+  height: calc(100% - 46px);
+  width: 1366px;
+  margin: auto;
+  display: flex;
+  & .sidebar-container{
+    transition: width 0.28s ease-out;
+    width: 180px;
+    overflow: auto;
+    border-right: 1px solid #e6e6e6;
+  }
+  & .right-box{
+    height: 100%;
+    width: calc(100% - 180px);
+    margin-left: 10px;
     overflow: auto;
     & .content{
-      margin-bottom: 60px;
+      min-height: calc(100% - 150px);
+      padding: 20px 40px;
+      background-color: #fff;
     }
+  }
 }
-
-.left-menu{
-  position: fixed;
-  left: 0;
-  top: 46px;
-  width: 180px;
-  height: 100%;
-}
-
 </style>

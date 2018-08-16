@@ -42,15 +42,16 @@
 <style lang="postcss" scoped>
 .header {
   color: #fff;
-  font-size: 16px;
-  background: #409EFF;
+  font-size: 14px;
+  background: #3a79ff;
   height: 46px;
   line-height: 46px;
-  font-weight: 400;
+  font-weight: 700;
   box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.4);
   & .header-box{
-    // width: 1360px;
+    width: 1360px;
     margin: 0 auto;
+    background: #3a79ff;
   }
   & .header-user-name {
     cursor: pointer;
