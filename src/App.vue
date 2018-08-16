@@ -96,7 +96,7 @@ a:focus,a:active{
     margin-left: 10px;
     overflow: auto;
     & .content{
-      min-height: calc(100% - 150px);
+      min-height: calc(100% - 110px);
       padding: 20px 40px;
       background-color: #fff;
     }

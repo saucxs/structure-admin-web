@@ -25,6 +25,5 @@
   font-size: 12px;
   text-align: center;
   height: 30px;
-  line-height: 30px;
 }
 </style>
