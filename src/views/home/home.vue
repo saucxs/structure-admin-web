@@ -10,7 +10,7 @@
         <p>测试测试</p>
          <p>{{text}}</p>
         <p>测试测试end</p>
-        <el-button type="text" @click="dialogVisible = true,maskModal = true">点击打开 Dialog</el-button>
+        <el-button type="text" @click="dialogVisible = true">点击打开 Dialog</el-button>
         <div v-if="maskModal" class="mask"></div>
         <el-dialog
         title="提示"
